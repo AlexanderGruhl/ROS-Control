@@ -1,0 +1,36 @@
+ur5:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+  # Position Controllers ---------------------------------------
+  ur_arm_transmission_shoulder_pan_joint_position_controller:
+    type: project_controller/ProjectController
+    joint: shoulder_pan_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  
+  ur_arm_transmission_shoulder_lift_joint_position_controller:
+    type: project_controller/ProjectController
+    joint: shoulder_lift_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+  ur_arm_transmission_elbow_joint_position_controller:
+    type: project_controller/ProjectController
+    joint: elbow_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  
+  ur_arm_transmission_wrist_1_joint_position_controller:
+    type: project_controller/ProjectController
+    joint: wrist_1_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  
+  ur_arm_transmission_wrist_2_joint_position_controller:
+    type: project_controller/ProjectController
+    joint: wrist_2_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  
+  ur_arm_transmission_wrist_3_joint_position_controller:
+    type: project_controller/ProjectController
+    joint: wrist_3_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}

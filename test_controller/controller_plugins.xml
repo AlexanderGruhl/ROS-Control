@@ -1,0 +1,5 @@
+<library path="lib/libtest_controller_lib">
+  <class name="test_controller/PositionController" 
+         type="test_ns::PositionController"           
+         base_class_type="controller_interface::ControllerBase" />
+</library>

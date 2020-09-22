@@ -1,0 +1,5 @@
+<library path="lib/libproject_controller_lib">
+  <class name="project_controller/ProjectController" 
+         type="controller_project::ProjectController"           
+         base_class_type="controller_interface::ControllerBase" />
+</library>
